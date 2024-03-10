@@ -1,0 +1,99 @@
+:root {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --color-background: #3503bc;
+  --color-bg-dark: #0b0454;
+  --color-bg-soft: #ce7797;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-bg-soft);
+  background: linear-gradient(-180deg, rgba(2, 0, 36, 1) 0%, rgba(53, 3, 186, 1) 35%);
+}
+
+header {
+  font-size: 1.125rem;
+
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature,
+.catalog,
+.cta {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.cta-btn {
+  background: linear-gradient(-250deg, #dbb8c5, #ce7797);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 999px;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+}
+
+.genres>li {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.genres>li+li {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-ctlg>a,
+.see-more>a {
+  background: linear-gradient(-250deg, #dbb8c5, #ce7797);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.see-more>a {
+  background: linear-gradient(-250deg, #0b0454, #140d5e);
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #0b0454;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  padding: 2rem;
+}
