@@ -16,7 +16,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-bg-soft);
-  background: linear-gradient(-180deg, rgba(2, 0, 36, 1) 0%, rgba(53, 3, 186, 1) 35%);
+  background: linear-gradient(-180deg, rgba(2, 0, 36, 1) 0%, rgba(53, 3, 186, 1) 50%);
 }
 
 header {
