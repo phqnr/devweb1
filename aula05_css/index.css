@@ -1,0 +1,27 @@
+#aqua {
+  background-color: #00ffff;
+  border: solid 3px #000;
+}
+
+#dotted {
+  border: dashed 3px #000;
+}
+
+#mix {
+  border-right: double 3px #000;
+  border-bottom: dotted 3px #000;
+  border-left: solid 3px #000;
+  border-top: dashed 3px #000;
+}
+
+#color {
+  border-right: solid 3px violet;
+  border-bottom: solid 3px red;
+  border-left: solid 3px green;
+  border-top: solid 3px blue;
+}
+
+#beige {
+  background-color: beige;
+  border: none;
+}
