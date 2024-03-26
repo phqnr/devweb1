@@ -1,0 +1,50 @@
+.div1 {
+  display: flex;
+  background-color: #E8751A;
+  border: solid 2px #898121;
+  justify-content: center;
+}
+
+.div1-in {
+  background-color: #E5C287;
+  border: solid 3px #898121;
+  border-radius: 10px;
+  width: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.div2 {
+  display: flex;
+  background-color: #EADFB4;
+  border: solid 2px #51829B;
+  flex-direction: row-reverse;
+}
+
+.div2-in {
+  background-color: #9BB0C1;
+  border: solid 3px #F6995C;
+  border-radius: 10px;
+  width: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.div3 {
+  display: flex;
+  background-color: #E3E1D9;
+  border: solid 2px #B4B4B8;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+
+  /* flex-flow: row wrap;   unicia flex-direction e flex-wrap numa única atribuição */
+}
+
+.div3-in {
+  background-color: #F2EFE5;
+  border: solid 3px #C7C8CC;
+  border-radius: 10px;
+  width: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+}
