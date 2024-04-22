@@ -1,0 +1,203 @@
+/*  ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px #fff;
+  transform: scale(1.05);
+  transition: .4s;
+}
+
+h2.titulo {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 2.25rem 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #7d7d7d;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:hover {
+  color: #000;
+  transform: scale(1.15);
+  transition: .4s;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* ESTILO MAIN SECTION */
+section.topo-site {
+  padding: 8rem 4%;
+}
+
+section .topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+section.topo-site .txt-topo-site h1 {
+  color: #10375e;
+  font-size: 44px;
+  line-height: 4rem;
+  margin-top: 3rem;
+}
+
+.topo-site .txt-topo-site h1 span {
+  color: #59110e;
+  display: block;
+}
+
+.topo-site .txt-topo-site p {
+  color: #7d7d7d;
+  max-width: 80vh;
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #59110e;
+  border-radius: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.topo-site .img-topo-site img {
+  margin-left: 20rem;
+}
+
+/*  ESTILO PORTFÓLIO */
+
+section.portfolio {
+  padding: 8rem 4%;
+  box-shadow: 0px 0px 40px 5px #ffffff1a;
+  background-color: #003366;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+
+.img-port {
+  padding: 0.5rem;
+  background-color: #003366;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.img-port img {
+  border-radius: 10px;
+}
+
+.btn-saibamais {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #59110e;
+  border-radius: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+}
+
+
+/*  ESTILO CONTATO */
+section.contato {
+  padding: 5rem 4%;
+}
+
+section.contato .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+section.contato h2 {
+  border-top: 3px solid #59110e;
+
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #003366;
+}
+
+section.contato h2 span {
+  color: #59110e;
+  display: block;
+}
+
+.btn-enviar {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #59110e;
+  border-radius: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
