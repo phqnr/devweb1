@@ -2,7 +2,7 @@
   display: flex;
   background-color: #E8751A;
   border: solid 2px #898121;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .div1-in {
