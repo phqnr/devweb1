@@ -1,0 +1,32 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.forms {
+  box-shadow: 0 0 30px #00000044;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 0 4%;
+}
+
+form {
+  padding-top: 4rem;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+.btn-envio {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}

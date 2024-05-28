@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- BOOSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css"> <!-- CSS -->
+  <script src="script.js" defer></script> <!-- JAVASCRIPT -->
+  <title>Avaliação 02 - Desenvolvimento Web 1</title>
+</head>
+
+<body>
+  <div class=" container forms">
+    <form id="formulario">
+      <h1>Cadastro de Contatos</h1>
+      <div>
+        <label for="nome">Nome:</label>
+        <input class="form-control" type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input class="form-control" type="text" id="cpf" name="cpf" required>
+      </div>
+      <div>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input class="form-control" type="date" id="dataNascimento" name="dataNascimento" required>
+      </div>
+      <div>
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" type="text" id="endereco" name="endereco" required>
+      </div>
+      <div class="btn-envio">
+        <button type="button" class="btn btn-primary" onclick="adicionarCadastro()">Cadastrar</button>
+        <button type="button" class="btn btn-primary" id="exibir">Exibir Contatos</button>
+        <button type="button" class="btn btn-primary" id="buscar">Buscar Contato</button>
+        <button type="button" class="btn btn-primary" id="remover">Remover Contato</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Cadastros:</h2>
+    <ul id="cadastroList"></ul>
+    <div id="cadastroDetalhes"></div> <!-- Área para exibir detalhes dos cadastros -->
+  </div>
+</body>
+
+</html>
