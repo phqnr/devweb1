@@ -40,18 +40,16 @@
         <input class="form-control" type="text" id="endereco" name="endereco" required>
       </div>
       <div class="btn-envio">
-        <button type="button" class="btn btn-primary" onclick="adicionarCadastro()">Cadastrar</button>
-        <button type="button" class="btn btn-primary" id="exibir">Exibir Contatos</button>
+        <button type="button" class="btn btn-primary" onclick="cadastrarContato()">Cadastrar</button>
+        <button type="button" class="btn btn-primary" onclick="exibirContatos()">Exibir Contatos</button>
         <button type="button" class="btn btn-primary" id="buscar">Buscar Contato</button>
         <button type="button" class="btn btn-primary" id="remover">Remover Contato</button>
       </div>
     </form>
   </div>
 
-  <div class="container">
-    <h2>Cadastros:</h2>
-    <ul id="cadastroList"></ul>
-    <div id="cadastroDetalhes"></div> <!-- Área para exibir detalhes dos cadastros -->
+  <div>
+    <div id="cadastroList"></div> <!-- Área para exibir detalhes dos cadastros -->
   </div>
 </body>
 

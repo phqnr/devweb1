@@ -30,3 +30,15 @@ label {
   display: flex;
   gap: 1rem;
 }
+
+h3 {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.exibir-contato {
+  margin: 2rem 17rem;
+  padding: .75rem 4%;
+  box-shadow: 0 0 30px #00000044;
+  border-radius: 10px;
+}
