@@ -102,7 +102,7 @@
   <ul>
     <li><strong>Avaliação 02</strong></li>
     <p>Proposta: Criar uma página web para cadastros de usuários.</p>
-    <p><strong>Características da página:</strong></p>
+    <span><strong>Características da página:</strong></span>
     <ul>
       <li>Crie um programa em JavaScript que leia informações de um formulário de cadastro, incluindo <strong>nome, CPF,
           data de
