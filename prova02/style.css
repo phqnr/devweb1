@@ -31,13 +31,15 @@ label {
   gap: 1rem;
 }
 
+
+/* códigos utilizados a partir das funções do javascript */
 h3 {
   color: #007bff;
   font-weight: 500;
 }
 
 .exibir-contato {
-  margin: 2rem 17rem;
+  margin: 2rem auto;
   padding: .75rem 4%;
   box-shadow: 0 0 30px #00000044;
   border-radius: 10px;

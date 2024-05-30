@@ -40,16 +40,16 @@
         <input class="form-control" type="text" id="endereco" name="endereco" required>
       </div>
       <div class="btn-envio">
-        <button type="button" class="btn btn-primary" onclick="cadastrarContato()">Cadastrar</button>
-        <button type="button" class="btn btn-primary" onclick="exibirContatos()">Exibir Contatos</button>
-        <button type="button" class="btn btn-primary" id="buscar">Buscar Contato</button>
-        <button type="button" class="btn btn-primary" id="remover">Remover Contato</button>
+        <button type="submit" class="btn btn-primary" onclick="cadastrarContato()">Cadastrar</button>
+        <button type="submit" class="btn btn-primary" onclick="exibirContatos()">Exibir Contatos</button>
+        <button type="submit" class="btn btn-primary" onclick="buscarContato()">Buscar Contato</button>
+        <button type="submit" class="btn btn-primary" onclick="removerContato()">Remover Contato</button>
       </div>
-    </form>
-  </div>
+    </form> <!-- formulario -->
+  </div> <!-- container forms -->
 
-  <div>
-    <div id="cadastroList"></div> <!-- Área para exibir detalhes dos cadastros -->
+  <div class="container">
+    <div id="cadastroList"></div> <!-- exibir detalhes dos cadastros -->
   </div>
 </body>
 
