@@ -1,11 +1,13 @@
 // Vetor vazio para receber o cadastro dos usuários
 let cadastros = [];
 
+
 // EventListener para manipular o envio do formulário
 document.getElementById('formulario').addEventListener('submit', function (event) {
   event.preventDefault(); // Impede o envio do formulário para evitar recarregar a página
   cadastrarContato();
 });
+
 
 // Função para cadastrar o contato
 function cadastrarContato() {
@@ -64,44 +66,49 @@ function exibirContatos() {
     cpfLabel.textContent = 'CPF: ';
     cpfLabel.style.fontWeight = 'bold';
 
-    const cpfElement = document.createElement('p'); // exibe o valor do CPF na tag <p>
-    cpfElement.appendChild(cpfLabel);
-    cpfElement.appendChild(document.createTextNode(cadastro.cpf)); // adiciona o valor do CPF
+    const cpfContato = document.createElement('p'); // exibe o valor do CPF na tag <p>
+    cpfContato.appendChild(cpfLabel);
+    cpfContato.appendChild(document.createTextNode(cadastro.cpf)); // adiciona o valor do CPF
+
 
     // exibe o elemento data de nascimento
     const dataNascimentoLabel = document.createElement('span');
     dataNascimentoLabel.textContent = 'Data de Nascimento: ';
     dataNascimentoLabel.style.fontWeight = 'bold';
 
-    const dataNascimentoElement = document.createElement('p');
-    dataNascimentoElement.appendChild(dataNascimentoLabel);
+    const dataNascimentoContato = document.createElement('p');
+    dataNascimentoContato.appendChild(dataNascimentoLabel);
 
 
     const dataNascimento = new Date(cadastro.dataNascimento + 'T00:00:00');   // cria um novo objeto Data e considera o dia digitado
     const dataFormatada = dataNascimento.toLocaleDateString('pt-BR');   // define a formatação pt-BR
-    dataNascimentoElement.appendChild(document.createTextNode(dataFormatada));  // adiciona o valor da data de nascimento
+    dataNascimentoContato.appendChild(document.createTextNode(dataFormatada));  // adiciona o valor da data de nascimento
+
 
     // exibe o elemento endereço
     const enderecoLabel = document.createElement('span');
-    const enderecoElement = document.createElement('p');
     enderecoLabel.textContent = 'Endereço: ';
     enderecoLabel.style.fontWeight = 'bold';
-    enderecoElement.appendChild(enderecoLabel);
-    enderecoElement.appendChild(document.createTextNode(cadastro.endereco)); // adiciona o valor do endereço
 
+    const enderecoContato = document.createElement('p');
+    enderecoContato.appendChild(enderecoLabel);
+    enderecoContato.appendChild(document.createTextNode(cadastro.endereco)); // adiciona o valor do endereço
+
+
+    // manipulação dos elementos DOM
     exibirContato.appendChild(nomeContato);
-    exibirContato.appendChild(cpfElement);
-    exibirContato.appendChild(dataNascimentoElement);
-    exibirContato.appendChild(enderecoElement);
+    exibirContato.appendChild(cpfContato);
+    exibirContato.appendChild(dataNascimentoContato);
+    exibirContato.appendChild(enderecoContato);
 
-    listarCadastros.appendChild(exibirContato);
+    listarCadastros.appendChild(exibirContato); // exibe a listagem dos cadastros
   });
 }
 
 
-// Função para buscar um contato pelo CPF
+// Função para buscar um contato pelo CPF e exibir no alert
 function buscarContatoPorCPF(cpf) {
-  const contato = cadastros.find(cadastro => cadastro.cpf === cpf);
+  const contato = cadastros.find(cadastro => cadastro.cpf === cpf); // busca pelo objeto cpf dentro do array de cadastro
   if (contato) {
     window.alert(`Contato encontrado: 
     Nome: ${contato.nome}
@@ -109,14 +116,15 @@ function buscarContatoPorCPF(cpf) {
     Data de Nascimento: ${new Date(contato.dataNascimento + 'T00:00:00').toLocaleDateString('pt-BR')}
     Endereço: ${contato.endereco}`);
   } else {
-    window.alert('CPF não encontrado.');
+    window.alert('CPF não encontrado!');
   }
 }
 
-// Função para buscar contato e exibir o prompt
+
+// Função para buscar via CPF e exibir os dados do contato
 function buscarContato() {
   const cpfBusca = window.prompt('Por favor, insira o CPF a ser buscado:');
-  if (cpfBusca && cpfBusca.length === 11) {
+  if (cpfBusca && cpfBusca.length === 11) { // verifica se um CPF foi inserido e se tem 11 dígitos
     buscarContatoPorCPF(cpfBusca);
   } else {
     window.alert('Por favor, insira um CPF válido com 11 dígitos.');
@@ -126,15 +134,16 @@ function buscarContato() {
 
 // Função para remover um contato pelo CPF
 function removerContatoPorCPF(cpf) {
-  const indice = cadastros.findIndex(cadastro => cadastro.cpf === cpf);
-  if (indice !== -1) {
+  const indice = cadastros.findIndex(cadastro => cadastro.cpf === cpf); // buscar o valor do objeto cpf e atribui à variável 'indice'
+  if (indice !== -1) { // se o indice for encontrado, será removido na função abaixo .splice()
     cadastros.splice(indice, 1);
     window.alert('Contato excluído com sucesso!');
-    exibirContatos(); // Atualiza a exibição dos contatos após a remoção
+    exibirContatos(); // atualiza a exibição dos contatos após a remoção
   } else {
     window.alert('CPF não encontrado. Tente novamente.');
   }
 }
+
 
 // Função para remover contato e exibir o prompt
 function removerContato() {
@@ -145,9 +154,3 @@ function removerContato() {
     window.alert('Por favor, insira um CPF válido com 11 dígitos.');
   }
 }
-
-
-
-
-
-
