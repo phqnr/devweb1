@@ -1,0 +1,75 @@
+:root {
+
+  --dark-blue: #232c35;
+  --medium-blue: #3a5361;
+  --light-blue: #50727B;
+  --light-green: #78A083;
+  --bg-color: #fafafa;
+
+  /* fontes */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  transition: background 0.2s linear;
+}
+
+.interface {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.left-side {
+  background-color: var(--dark-blue);
+  width: 60%;
+
+  background-image: url(../images/login.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--bg-color);
+}
+
+.left-side>h2 {
+  margin-top: 20rem;
+  margin-left: 10rem;
+}
+
+.left-side>p {
+  margin-left: 10rem;
+}
+
+.right-side {
+  background-color: var(--bg-color);
+  width: 40%;
+}
+
+.right-side>h2 {
+  margin: 10rem 35%;
+}
+
+
+.formulario {
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
