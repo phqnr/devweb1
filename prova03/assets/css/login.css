@@ -1,0 +1,155 @@
+@import url(general.css);
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  transition: background 0.2s linear;
+
+  /* fontes */
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.interface {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.left-side {
+  background-color: var(--dark-blue);
+  width: 60%;
+
+  background-image: url(../images/login.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--bg-color);
+}
+
+.left-side>h2 {
+  margin-top: 20rem;
+  margin-left: 10rem;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.left-side i {
+  color: var(--bg-color);
+}
+
+.left-side>p {
+  margin-left: 10rem;
+  font-size: 1.5rem;
+}
+
+.right-side {
+  background-color: var(--bg-color);
+  width: 40%;
+}
+
+.container-login {
+  margin: 10rem auto;
+}
+
+.container-login>h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  font-size: 2.5rem;
+  color: var(--medium-blue);
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: 900;
+}
+
+h2>i {
+  font-size: 2.75rem;
+  padding-right: 1.25rem;
+  color: var(--medium-blue);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 20%;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: .25rem !important;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+label>i {
+  font-size: 1.25rem;
+  margin-right: .5rem;
+}
+
+.formulario input {
+  background-color: var(--bg-color);
+  width: 20rem;
+  border: none;
+  border-bottom: 1px solid #3a5361;
+  font-size: 1.25rem;
+
+}
+
+.formulario input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--medium-blue);
+}
+
+.btn-enviar {
+  margin-top: 1.75rem;
+  text-align: center;
+}
+
+button {
+  margin: 1.75rem 35%;
+  text-align: center;
+  font-size: 1rem;
+  width: 9rem;
+  padding: 0.5rem;
+  background-color: #50727b00;
+  color: var(--medium-blue);
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: .1s;
+}
+
+button:hover {
+  border-radius: 10px;
+  background-color: var(--medium-blue);
+  color: var(--bg-color);
+  box-shadow: 1px 1px 8px var(--dark-blue);
+  transform: scale(1.0);
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
