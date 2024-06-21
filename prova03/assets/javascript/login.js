@@ -3,7 +3,7 @@ function login() {
   var senha = document.getElementById('senha').value;
 
   if (usuario == "admin" && senha == "admin") {
-    alert("Sucesso!");
+    alert("Login realizado com sucesso!");
     location.href = './assets/html/menu.html';
   } else {
     alert("Usuário ou senha incorretos.");
