@@ -109,8 +109,8 @@ label>i {
   width: 20rem;
   border: none;
   border-bottom: 1px solid #3a5361;
-  font-size: 1.25rem;
-
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .formulario input:focus {
@@ -143,13 +143,4 @@ button:hover {
   color: var(--bg-color);
   box-shadow: 1px 1px 8px var(--dark-blue);
   transform: scale(1.0);
-}
-
-#msgError {
-  text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
 }
