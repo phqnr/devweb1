@@ -34,8 +34,10 @@
     <section>
       <div class="interface">
         <div class="left-side">
-          <h2><i class="devicon-insomnia-plain"></i>DEV CAR</h2>
-          <p>Entre e faça parte da revolução automotiva.</p>
+          <div class="login-descricao">
+            <h1><i class="devicon-insomnia-plain"></i>DEV CAR</h1>
+            <p class="descricao">Entre e faça parte da revolução automotiva.</p>
+          </div> <!-- descricao -->
         </div> <!-- left-side -->
 
         <div class="right-side">
@@ -43,22 +45,20 @@
             <h2><i class="devicon-insomnia-plain"></i>LOGIN</h2>
 
             <form id="loginForm">
-              <div class="formulario">
-                <div>
-                  <label for="user" id="userLabel"><i class="bi bi-person-fill"></i>USUÁRIO</label>
-                  <input type="text" id="user" name="user" required>
-                </div>
+              <div>
+                <label for="user" id="userLabel"><i class="bi bi-person-fill"></i>USUÁRIO</label>
+                <input type="text" id="user" name="user" required>
+              </div>
 
-                <div>
-                  <label for="senha" id="senhaLabel"><i class="bi bi-unlock-fill"></i>SENHA</label>
-                  <input type="password" id="senha" name="senha" required>
-                </div>
-              </div> <!-- formulario -->
+              <div>
+                <label for="senha" id="senhaLabel"><i class="bi bi-unlock-fill"></i>SENHA</label>
+                <input type="password" id="senha" name="senha" required>
+              </div>
               <div class="btn-entrar">
                 <button id="enviar" type="submit" onclick="login(); return false">ENTRAR</button>
-              </div> <!-- btn-enviar -->
+              </div> <!-- btn-entrar -->
             </form>
-          </div> <!-- login -->
+          </div> <!-- container-login -->
         </div> <!-- right-side -->
       </div> <!-- interface -->
     </section>
