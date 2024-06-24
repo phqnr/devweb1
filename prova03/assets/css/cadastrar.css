@@ -1,0 +1,138 @@
+@import url(general.css);
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.interface {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left-side {
+  background-color: var(--bg-color);
+  width: 70%;
+  color: var(--dark-blue);
+}
+
+.left-side>h2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 2.75rem;
+  font-family: "Zen Kurenaido", sans-serif;
+  cursor: pointer;
+}
+
+.left-side>h2:hover {
+  transform: scale(1.2);
+  transform-origin: left top;
+  text-shadow: 1px 1px 1px var(--medium-blue);
+}
+
+.left-side i {
+  color: var(--medium-blue);
+  margin-right: 0.75rem;
+  font-size: 2.5rem;
+}
+
+.left-side>p {
+  margin-left: 10rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  padding: 3rem 0 0 10rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  color: var(--dark-blue);
+}
+
+h3:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+h3 i {
+  font-size: 3rem;
+  color: var(--medium-blue);
+  margin-left: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.75rem 2rem;
+  width: 60%;
+  border: 2px solid var(--dark-blue);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+input:hover {
+  transform: scale(1.1);
+}
+
+input:focus {
+  background-color: #d2e2f127;
+}
+
+button {
+  margin: 2.5rem 25%;
+  font-size: 1.25rem;
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: #50727b00;
+  color: var(--medium-blue);
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: .1s;
+  outline: none;
+  letter-spacing: 1px;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+button:hover {
+  border-radius: 10px;
+  background-color: var(--medium-blue);
+  color: var(--bg-color);
+  box-shadow: 3px 8px 8px var(--dark-blue);
+  transform: scale(1.1);
+  transition: 0.2s;
+  outline: none;
+}
+
+.right-side {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(../images/cadastro.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 9px;
+  cursor: pointer;
+}

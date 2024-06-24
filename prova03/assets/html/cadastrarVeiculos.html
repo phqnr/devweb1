@@ -32,17 +32,22 @@
       <div class="interface">
         <div class="left-side">
           <h2><i class="devicon-insomnia-plain"></i>DEV CAR</h2>
-          <div class="menu container">
-            <h3><i class="bi bi-car-front-fill"></i> Gerenciamento de veículos</h3>
-            <nav>
-              <ul>
-                <li id="cadastrar" onclick="cadastrar()">Cadastrar veículo</li>
-                <li id="listar" onclick="listar()">Listar veículos</li>
-                <li id="buscar" onclick="buscar()">Buscar veículos</li>
-                <li id="excluir" onclick="excluir()">Excluir veículos</li>
-                <li id="sair" onclick="sair()">Sair</li>
-              </ul>
-            </nav>
+          <div class="container">
+            <h3><i class="bi bi-car-front-fill"></i> Cadastro de veículos</h3>
+            <form action="">
+              <input type="text" placeholder="Marca: " required>
+              <input type="text" placeholder="Modelo: " required>
+              <input type="text" placeholder="Ano de Fabricação:" required>
+              <input type="text" placeholder="Cor: " required>
+              <input type="text" placeholder="Tipo:  Ex.: Hatch, Sedã, SUV, Picape, etc." required>
+              <input type="text" placeholder="Kilometragem:" required>
+              <input type="text" placeholder="Número de Portas:" required>
+              <input type="text" placeholder="Preço: R$" required>
+
+              <div>
+                <button id="cadastrarVeiculo" type="submit">CADASTRAR</button>
+              </div>
+            </form>
           </div> <!-- menu -->
         </div> <!-- left-side -->
 
