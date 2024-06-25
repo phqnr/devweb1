@@ -128,10 +128,11 @@ button:hover {
 }
 
 .right-side {
+  width: 30%;
+}
+
+.right-side img {
   width: 50vw;
-  height: 100vh;
-  background-image: url(../images/cadastro.jpg);
-  background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 9px;
   cursor: pointer;
