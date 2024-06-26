@@ -1,4 +1,7 @@
-const veiculos = [];
+// Recupera a string JSON do Local Storage do cadastro dos veículos e converte para vetor novamente
+const veiculosArr = JSON.parse(localStorage.getItem('veiculos')) || [];
+
+// const veiculos = [];
 
 function cadastrar(event) {
   event.preventDefault(); // Evita o envio tradicional do formulário
@@ -15,10 +18,13 @@ function cadastrar(event) {
   };
 
   // adiciona os dados do novo carro no array
-  veiculos.push(carros);
+  veiculosArr.push(carros);
   alert("Veículo cadastrado com sucesso!");
 
-  //limpa o formulário para o cadastro de um novo carro
+  // converte o vetor de veiculos para uma string JSON e armazenar no Local Storage
+  localStorage.setItem('veiculos', JSON.stringify(veiculosArr));
+
+  // limpa o formulário para o cadastro de um novo carro
   document.getElementById('formCadastro').reset();
   location.href = './menu.html';
 }

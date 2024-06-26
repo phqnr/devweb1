@@ -80,7 +80,7 @@ input {
   margin: 0.5rem;
   padding: 0.75rem 2rem;
   width: 60%;
-  border: 2px solid var(--dark-blue);
+  box-shadow: 0 0 2px var(--light-blue);
   border-radius: 10px;
   background-color: var(--bg-color);
   font-size: 1.25rem;
@@ -89,12 +89,13 @@ input {
 
 input::placeholder {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--dark-blue);
+  font-weight: 400;
+  color: var(--light-blue);
 }
 
 input:hover {
   transform: scale(1.1);
+  background-color: #d2e2f127;
 }
 
 input:focus {
@@ -103,21 +104,21 @@ input:focus {
 
 button {
   margin: 2.5rem 25%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   width: 10rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   background-color: #50727b00;
   color: var(--medium-blue);
   border: none;
-  font-weight: bolder;
+  font-weight: 600;
   cursor: pointer;
   transition: .1s;
   outline: none;
   letter-spacing: 1px;
-  font-family: "Zen Kurenaido", sans-serif;
 }
 
 button:hover {
+  padding: 0.75rem;
   border-radius: 10px;
   background-color: var(--medium-blue);
   color: var(--bg-color);

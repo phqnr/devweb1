@@ -1,10 +1,10 @@
 function cadastrar() {
-  alert("Você será direcionado(a).");
+  alert("Você será direcionado(a) para o Cadastro de Veículos.");
   location.href = './cadastrarVeiculos.html';
 }
 
 function listar() {
-  alert("Você será direcionado(a).");
+  alert("Você será direcionado(a) para a Listagem dos Veículos cadastrados.");
   location.href = './listarVeiculos.html';
 }
 
