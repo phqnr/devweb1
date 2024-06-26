@@ -1,3 +1,6 @@
+// Recupera a string JSON do Local Storage do cadastro dos veículos e converte para vetor novamente
+const veiculosArr = JSON.parse(localStorage.getItem('veiculos')) || [];
+
 // Função para direcionar à tela de cadastro
 function cadastrar() {
   alert("Você será direcionado(a) para o Cadastro de Veículos.");
@@ -6,14 +9,16 @@ function cadastrar() {
 
 // Função para direcionar à tela da listagem dos veículos cadastrados
 function listar() {
-  alert("Você será direcionado(a) para a Listagem dos Veículos cadastrados.");
-  location.href = './listarVeiculos.html';
+
+  // Verifica se o vetor de veículos está vazio
+  if (veiculosArr.length === 0) {
+    alert('Nenhum veículo cadastrado. Por favor, cadastre um veículo.');
+    return;
+  } else {
+    alert("Você será direcionado(a) para a Listagem dos Veículos cadastrados.");
+    location.href = './listarVeiculos.html';
+  }
 }
-
-
-
-// Recupera a string JSON do Local Storage do cadastro dos veículos e converte para vetor novamente
-const veiculosArr = JSON.parse(localStorage.getItem('veiculos')) || [];
 
 // Função para buscar o veículo via modelo e exibir os dados do veículo
 function buscarVeiculo() {
