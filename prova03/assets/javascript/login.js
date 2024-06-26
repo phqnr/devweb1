@@ -1,7 +1,10 @@
+// Função de login ao sistema
 function login() {
+  // declaração das variáveis capturando o valor informando pelo usuário
   var usuario = document.getElementById('user').value;
   var senha = document.getElementById('senha').value;
 
+  // verificação de usuário e senha
   if (usuario == "admin" && senha == "admin") {
     alert("Login realizado com sucesso!");
     location.href = './assets/html/menu.html';

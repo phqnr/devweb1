@@ -1,11 +1,10 @@
 // Recupera a string JSON do Local Storage do cadastro dos veículos e converte para vetor novamente
 const veiculosArr = JSON.parse(localStorage.getItem('veiculos')) || [];
 
-// const veiculos = [];
-
 function cadastrar(event) {
   event.preventDefault(); // Evita o envio tradicional do formulário
 
+  // cria o objeto carros para receber os parâmetros informados pelo usuário
   const carros = {
     marca: document.getElementById('marca').value,
     modelo: document.getElementById('modelo').value,
@@ -26,7 +25,10 @@ function cadastrar(event) {
 
   // limpa o formulário para o cadastro de um novo carro
   document.getElementById('formCadastro').reset();
+
+  // direciona o usuário automaticamente para o menu após cadastrar um veículo
   location.href = './menu.html';
 }
 
+// realiza o cadastro do veículo quando o o submit é enviado
 document.getElementById('formCadastro').addEventListener('submit', cadastrar);
